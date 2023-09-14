@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    border: none;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.player-score, .draw-score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cell {
+        font-size: 24px;
+    }
+}
