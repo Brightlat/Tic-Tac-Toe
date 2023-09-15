@@ -27,7 +27,7 @@
 
 ## Author
 
-- Your Name
+- SomeOne
 
 ## License
 
