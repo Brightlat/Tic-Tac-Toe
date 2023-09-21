@@ -27,7 +27,7 @@
 
 ## Author
 
-- SomeOne
+- [SomeOne](https://github.com/Brightlat)
 
 ## License
 
